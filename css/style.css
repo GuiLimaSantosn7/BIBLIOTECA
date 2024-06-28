@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Caviar;
+    src: url(caviarDreams/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: Verily;
+    src: url(VerilySerifMono.otf);
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra box-shadow */
+    padding: 10px 0; /* Espaçamento interno para a barra de navegação */
+}
+
+/* Barra de navegação */
+nav img, h1 {
+    text-decoration: none;
+    text-align: center;
+    font-family: Caviar;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav img#right {
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav h1 {
+    margin-left: 41%;
+}
+
+/* Menu Dropdown */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dropbtn.rotate {
+    transform: rotate(360deg);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+/* CSS para o poster */
+.poster {
+    border: 1px solid black;
+    margin-top: 2.5%;
+    margin-left: 3%;
+    margin-right: 4.5%;
+    width: 25%;
+    float: right;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.poster:hover {
+    transform: translateZ(500px);
+}
+
+.container {
+    position: relative;
+    perspective: 10000px;
+}
+
+/* posterLi */
+.posterli li {
+    position: relative;
+    perspective: 10000px;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+.posterh {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.posterh:hover {
+    transform: translatex(200px);
+}
+
+.posterli img {
+    padding: 10px;
+}
+
+.contv {
+    position: relative;
+}
+
+.imgv {
+    margin-top: 5.5px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.title {
+    position: absolute;
+    top: 100%;
+    left: -100%; /* Começa fora da tela, à esquerda */
+    transform: translateY(-50%);
+    font-family: Caviar;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0; /* Invisível no início */
+    animation: slideIn 1s forwards; /* Animação de 3 segundos */
+}
+
+@keyframes slideIn {
+    0% {
+        left: -100%;
+        top: 0%;
+        opacity: 0;
+    }
+    50% {
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        left: 20%; /* Ajuste conforme necessário */
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.subtitle {
+    position: absolute;
+    top: 40px; /* Ajuste conforme necessário */
+    left: 309px;
+    font-family: verily;
+    font-size: 16px;
+    color: #0c0909;
+    margin-top: 0; /* Ajuste conforme necessário */
+}
+
+.subtitle a {
+    color: rgb(0, 87, 46);
+}
+
+.descricao {
+    max-width: 100%; /* Limita a largura ao tamanho da imagem */
+    font-family: Caviar;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#toggleDarkMode{
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 1px;
+    float: right;
+}
+
+
+body.dark-mode {
+    background-color: #292b2f;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-dark {
+    background-color: #292b2f;
+    color: #fff;
+}
+
+body.dark-mode .contv {
+    background-color: #292b2f;
+    color: #fff;
+}
+
+body.dark-mode p{
+
+    color: #ffffff;
+}
+
+body.dark-mode h1{
+
+    color: #ffffff;
+}
+
+body.dark-mode .title {
+    color: #ffffff;
+}
+

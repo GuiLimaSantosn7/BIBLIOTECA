@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <nav>  
+        <!--Icones, o id "right" serve pra identificar em que lado da tela fico o icone-->
+        <a class="hover" classhref="https://www.instagram.com/bibliotecaifcvideira/"><img id="right" src="img/ICON_Insta.png" width="45px"></a>
+        <a class="hover" href="http://contate.me/bibliotecaifcvideira"><img id="right" src="img/ICON_Whatsapp.png" width="45px"></a>
+        <!--DropDown-->
+        <div class="dropdown">
+            <img onclick="myFunction()" class="dropbtn" src="img/ICON_Dropdown.png" width="45px" alt="">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Pergamum</a>
+              <a href="#">Biblioteca Virtual</a>
+              <a href="#">Saraiva</a>
+              <a href="#">Reservar</a>
+              <a href="#">Ebooks</a>
+              <a href="#">ABNT</a>
+            </div>
+          </div>
+            
+        
+          <a href="index.html"><h1>BIBLIOTECA</h1></a>
+    </nav>
+
+    <div class="posterli">
+    <ul>
+      <li><img src="img/POSTER_Htebook.png" id="poster1" class="posterh" width="1500px" height="190px" alt=""></li>
+      <li><img src="img/POSTER_Htreserva.png" id="poster2" class="posterh" width="1500px" height="190px" alt=""></li>
+      <li><img src="img/POSTER_Htrenovacao.png" class="posterh" width="1500px" height="190px" alt=""></li>
+      <li><img src="img/POSTER_Htcc.png" class="posterh" width="1500px" height="190px" alt=""></li>
+      <li><img src="img/POSTER_Hdoacaodelivros.png" class="posterh" width="1500px" height="190px" alt=""></li>
+    </ul>
+     </div>
+
+     <script>
+      $("#poster1.posterh").click(function() {
+  window.location.href = 'Ebook.html'
+        });
+        $("#poster2.posterh").click(function() {
+  window.location.href = 'Reserva.html'
+        });
+
+
+</script>
+  
+
+ 
+
+<script src="script.js"></script>
+<script src="DM.js"></script>
+</body>
+</html>

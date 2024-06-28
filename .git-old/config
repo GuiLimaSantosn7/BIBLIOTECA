@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "Biblioteca"]
+	url = https://github.com/GuiLimaSantosn7/BIBLIOTECA
+	fetch = +refs/heads/*:refs/remotes/Biblioteca/*
